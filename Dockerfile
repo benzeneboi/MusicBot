@@ -1,5 +1,8 @@
 FROM python:3.8-alpine
 
+# for watchtower monitoring
+LABEL com.centurylinklabs.watchtower.enable="true"
+
 # Add project source
 WORKDIR /musicbot
 COPY . ./
